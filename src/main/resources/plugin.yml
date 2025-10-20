@@ -1,0 +1,36 @@
+main: net.airdog46.Main
+name: SpeedCheck
+version: 1.3.2
+api-version: '1.20'
+commands:
+  togglescoreboard:
+    description: Toggles the scoreboard for the current player
+    aliases:
+    - togglesb
+    - sbtoggle
+  toggledebug:
+    description: "Toggles console output for the speed scoreboard"
+    aliases:
+    - toggledbg
+    - togglesbdbg
+    - togglespeeddbg
+    permission: speedscoreboard.toggledebug
+  getcurrentspeed:
+    description: "Get your or another player's speed"
+    aliases:
+    - getspeed
+    - gcs
+    permission: speedscoreboard.getcurrentspeed
+  setcurrentspeed:
+    description: "Set your or another player's speed"
+    aliases:
+    - setspeed 
+    - scs
+    permission: speedscoreboard.setcurrentspeed
+permission:
+  speedscoreboard.toggledebug:
+    default: op
+  speedscoreboard.getcurrentspeed:
+    default: op
+  speedscoreboard.setcurrentspeed:
+    default: op
