@@ -132,7 +132,7 @@ public class SpeedCommands implements CommandExecutor {
 
     /* Logic for getspeed command */
     private String getSpeed(Player p, CommandSender sender, SpeedTypes type) {
-        return ((checkSame(p, sender) ? "Your " : p.getName() + "'s ")) + 
+        return ((checkSame(p, sender) ? "Your " : p.getName() + ChatColor.RESET + "'s ")) + 
         ((type == SpeedTypes.FLY) ? "flying" : "walking") + " speed is " + 
         ((type == SpeedTypes.FLY) ? p.getFlySpeed() : p.getWalkSpeed()) + ".";
     }
@@ -162,7 +162,7 @@ public class SpeedCommands implements CommandExecutor {
                 break;
         }
         return "Set " 
-          + ((checkSame(p, sender)) ? "your" : p.getName() + "'s") + " "
+          + ((checkSame(p, sender)) ? "your" : p.getName() + ChatColor.RESET + "'s") + " "
           + ((type == SpeedTypes.FLY) ? "flying" : "walking") 
           + " speed to " + value + ".";
     }

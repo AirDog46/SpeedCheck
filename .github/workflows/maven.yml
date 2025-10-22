@@ -33,4 +33,4 @@ jobs:
       name: Upload artifact
       with:
         name: SpeedCheck.jar
-        path: target/speedcheck-1.3.2-SNAPSHOT.jar
+        path: target/speedcheck-1.3.3-SNAPSHOT.jar
